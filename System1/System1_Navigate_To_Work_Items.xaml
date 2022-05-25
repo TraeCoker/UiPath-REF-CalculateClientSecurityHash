@@ -49,7 +49,7 @@
       <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence sap2010:Annotation.AnnotationText="Navigates to &#xD;&#xA;WorkItems Page&#xD;&#xD;&#xA;Pre-Condition: System 1 &#xD;&#xA;Dashboard Open&#xD;&#xA;&#xD;&#xA;Post-Action: Work Items &#xD;&#xA;Page open" DisplayName="System1_Navigate_To_Work_Items" sap:VirtualizedContainerService.HintSize="375.2,340" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence sap2010:Annotation.AnnotationText="Navigates to &#xA;WorkItems Page&#xA;Pre-Condition: System 1 &#xA;Dashboard Open&#xA;&#xA;Post-Action: Work Items &#xA;Page open" DisplayName="System1_Navigate_To_Work_Items" sap:VirtualizedContainerService.HintSize="375.2,324" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -68,7 +68,7 @@
         </ui:CursorPosition>
       </ui:Click.CursorPosition>
       <ui:Click.Target>
-        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="58a4ac3c-7851-4c03-b71a-d8a52d785c1e" InformativeScreenshot="c3b2198b2989fdc2f6fbf046e247dfc6" Selector="&lt;wnd app='msedge.exe' cls='Chrome_WidgetWin_1' title='ACME System 1 - Dashboard and 17 more pages - Work - Microsoft​ *' /&gt;&lt;ctrl name='ACME System 1 - Dashboard' role='document' /&gt;&lt;ctrl name=' Work Items' role='link' /&gt;&lt;ctrl name=' Work Items' role='push button' /&gt;">
+        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="58a4ac3c-7851-4c03-b71a-d8a52d785c1e" InformativeScreenshot="e7fd56a81bbc97524312a0834641f9d1" Selector="&lt;html app='msedge.exe' title='ACME System 1 - Dashboard' /&gt;&lt;webctrl aaname='                          Work Items' parentid='dashmenu' tag='BUTTON' /&gt;">
           <ui:Target.TimeoutMS>
             <InArgument x:TypeArguments="x:Int32" />
           </ui:Target.TimeoutMS>
