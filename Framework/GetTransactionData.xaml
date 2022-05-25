@@ -140,7 +140,8 @@
                       </ui:FilterDataTable.Filters>
                       <ui:FilterDataTable.SelectColumns>
                         <scg:List x:TypeArguments="InArgument" Capacity="4">
-                          <x:Null />
+                          <InArgument x:TypeArguments="x:String">["WIID"]</InArgument>
+                          <InArgument x:TypeArguments="x:String">["Date"]</InArgument>
                         </scg:List>
                       </ui:FilterDataTable.SelectColumns>
                     </ui:FilterDataTable>
