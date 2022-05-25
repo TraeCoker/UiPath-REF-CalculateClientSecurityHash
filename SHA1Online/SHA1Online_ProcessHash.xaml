@@ -1,7 +1,7 @@
 <Activity mc:Ignorable="sap sap2010" x:Class="SHA1Online_ProcessHash" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <x:Members>
     <x:Property Name="in_HashFormula" Type="InArgument(x:String)" />
-    <x:Property Name="out_HashResult" Type="InArgument(x:String)" />
+    <x:Property Name="out_HashResult" Type="OutArgument(x:String)" />
   </x:Members>
   <mva:VisualBasic.Settings>
     <x:Null />
@@ -75,11 +75,10 @@
       <AssemblyReference>System.ValueTuple</AssemblyReference>
       <AssemblyReference>System.ComponentModel.Composition</AssemblyReference>
       <AssemblyReference>NPOI</AssemblyReference>
-      <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
       <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence sap2010:Annotation.AnnotationText="Retrieves the &#xD;&#xA;HashResult based on &#xD;&#xA;the input HashFormula&#xD;&#xA;&#xD;&#xA;Pre-Condition: SHA1Online &#xD;&#xA;open&#xD;&#xA;&#xD;&#xA;Post-Action: " DisplayName="SHA1Online_ProcessHash" sap:VirtualizedContainerService.HintSize="375.2,662.4" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence sap2010:Annotation.AnnotationText="Retrieves the &#xA;HashResult based on &#xA;the input HashFormula&#xA;&#xA;Pre-Condition: SHA1Online &#xA;open&#xA;&#xA;Post-Action: " DisplayName="SHA1Online_ProcessHash" sap:VirtualizedContainerService.HintSize="375.2,662.4" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
