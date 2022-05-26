@@ -46,24 +46,13 @@
       <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence sap2010:Annotation.AnnotationText="Closes SHA1Online&#xD;&#xA;&#xD;&#xA;Pre-Condition: SHA1Online &#xD;&#xA;Main Page open&#xD;&#xA;&#xD;&#xA;Post-Action: Closes Edge &#xD;&#xA;SHA1Online" DisplayName="SHA1Oline_Close" sap:VirtualizedContainerService.HintSize="375.2,324" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence sap2010:Annotation.AnnotationText="Closes SHA1Online&#xA;&#xA;Pre-Condition: SHA1Online &#xA;Main Page open&#xA;&#xA;Post-Action: Closes Edge &#xA;SHA1Online" DisplayName="SHA1Oline_Close" sap:VirtualizedContainerService.HintSize="375.2,324" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
         <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:CloseApplication DisplayName="Close Application 'push button  Close'" sap:VirtualizedContainerService.HintSize="333.6,107.2" sap2010:WorkflowViewState.IdRef="CloseApplication_1">
-      <ui:CloseApplication.Target>
-        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="283251f7-1303-47b7-8720-7dfb319e18d9" InformativeScreenshot="1e41967f873c20f7dd2eba03965c8dea" Selector="&lt;wnd app='msedge.exe' cls='Chrome_WidgetWin_1' title='SHA1 online - Work - Microsoft​ Edge' /&gt;&lt;ctrl name='SHA1 online - Microsoft Edge' role='pane' /&gt;&lt;ctrl name='Microsoft Edge' role='pane' /&gt;&lt;ctrl name='Close' role='push button' /&gt;">
-          <ui:Target.TimeoutMS>
-            <InArgument x:TypeArguments="x:Int32" />
-          </ui:Target.TimeoutMS>
-          <ui:Target.WaitForReady>
-            <InArgument x:TypeArguments="ui:WaitForReady" />
-          </ui:Target.WaitForReady>
-        </ui:Target>
-      </ui:CloseApplication.Target>
-    </ui:CloseApplication>
+    <ui:CloseWindow TimeoutMS="{x:Null}" UseWindow="{x:Null}" DisplayName="Close Window 'msedge.exe SHA1 online'" sap:VirtualizedContainerService.HintSize="333.6,107.2" sap2010:WorkflowViewState.IdRef="CloseWindow_1" InformativeScreenshot="8d277fef52496e6cc65958a5ab42ffe2" Selector="&lt;html app='msedge.exe' title='SHA1 online' /&gt;" WaitForReady="INTERACTIVE" />
   </Sequence>
 </Activity>
