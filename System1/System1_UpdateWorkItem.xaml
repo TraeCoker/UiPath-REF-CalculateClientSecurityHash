@@ -106,7 +106,7 @@
         </ui:Target>
       </ui:Click.Target>
     </ui:Click>
-    <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" DisplayName="Type Into 'TEXTAREA  newComment'" sap:VirtualizedContainerService.HintSize="496.8,135.2" sap2010:WorkflowViewState.IdRef="TypeInto_1" Text="[in_Comment]">
+    <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" Activate="True" DisplayName="Type Into 'TEXTAREA  newComment'" EmptyField="True" sap:VirtualizedContainerService.HintSize="496.8,135.2" sap2010:WorkflowViewState.IdRef="TypeInto_1" SimulateType="False" Text="[in_Comment]">
       <ui:TypeInto.Target>
         <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="212b89d5-cc38-4dc4-8216-f115c893b14b" InformativeScreenshot="b539763f53c18c3b96efc52b5a470706" Selector="&lt;html app='msedge.exe' htmlwindowname='WI-Update' title='ACME System 1' /&gt;&lt;webctrl tag='LABEL' aaname='Add Comments:' /&gt;&lt;nav up='1' /&gt;&lt;webctrl tag='TEXTAREA' /&gt;">
           <ui:Target.TimeoutMS>
@@ -208,7 +208,7 @@
         </ui:Click.Target>
       </ui:Click>
     </Switch>
-    <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'BUTTON  buttonUpdate'" sap:VirtualizedContainerService.HintSize="496.8,107.2" sap2010:WorkflowViewState.IdRef="Click_6" KeyModifiers="None" MouseButton="BTN_LEFT">
+    <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DelayMS="1000" DisplayName="Click 'BUTTON  buttonUpdate'" sap:VirtualizedContainerService.HintSize="496.8,107.2" sap2010:WorkflowViewState.IdRef="Click_6" KeyModifiers="None" MouseButton="BTN_LEFT">
       <ui:Click.CursorPosition>
         <ui:CursorPosition Position="Center">
           <ui:CursorPosition.OffsetX>
@@ -230,7 +230,7 @@
         </ui:Target>
       </ui:Click.Target>
     </ui:Click>
-    <ui:Click AlterIfDisabled="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DelayBefore="1000" DisplayName="Click 'Chrome_RenderWidgetHost...'" sap:VirtualizedContainerService.HintSize="496.8,107.2" sap2010:WorkflowViewState.IdRef="Click_11" KeyModifiers="None" MouseButton="BTN_LEFT">
+    <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'push button  OK'" sap:VirtualizedContainerService.HintSize="496.8,107.2" sap2010:WorkflowViewState.IdRef="Click_12" KeyModifiers="None" MouseButton="BTN_LEFT">
       <ui:Click.CursorPosition>
         <ui:CursorPosition Position="Center">
           <ui:CursorPosition.OffsetX>
@@ -242,7 +242,7 @@
         </ui:CursorPosition>
       </ui:Click.CursorPosition>
       <ui:Click.Target>
-        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="1ad9f146-4576-45a7-ae79-704c517eb90f" InformativeScreenshot="af7bb0d56f869df51f1cf591eeb421f3" Selector="&lt;wnd app='msedge.exe' cls='Chrome_WidgetWin_1' title='ACME System 1 - Work - Microsoft​ Edge' /&gt;&lt;ctrl name='acme-test.uipath.com says' role='dialog' /&gt;&lt;ctrl name='OK' role='push button' /&gt;">
+        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="68ecbf87-8639-41fd-8e4d-415bfbb676bc" InformativeScreenshot="12af72f81d3e44be686469cc982af16f" Selector="&lt;wnd app='msedge.exe' cls='Chrome_WidgetWin_1' title='ACME System 1 - Work - Microsoft​ Edge' /&gt;&lt;ctrl name='acme-test.uipath.com says' role='dialog' /&gt;&lt;ctrl name='OK' role='push button' /&gt;">
           <ui:Target.TimeoutMS>
             <InArgument x:TypeArguments="x:Int32" />
           </ui:Target.TimeoutMS>
@@ -252,6 +252,6 @@
         </ui:Target>
       </ui:Click.Target>
     </ui:Click>
-    <ui:CloseWindow TimeoutMS="{x:Null}" UseWindow="{x:Null}" DisplayName="Close Window 'msedge.exe ACME System 1'" sap:VirtualizedContainerService.HintSize="496.8,107.2" sap2010:WorkflowViewState.IdRef="CloseWindow_2" InformativeScreenshot="11e070fec00430b095517a9c2efad7e2" Selector="&lt;wnd app='msedge.exe' cls='Chrome_WidgetWin_1' title='ACME System 1 - Work - Microsoft​ Edge' /&gt;&lt;wnd cls='Intermediate D3D Window' /&gt;" WaitForReady="COMPLETE" />
+    <ui:CloseWindow TimeoutMS="{x:Null}" UseWindow="{x:Null}" DisplayName="Close Window 'msedge.exe ACME System 1'" sap:VirtualizedContainerService.HintSize="496.8,107.2" sap2010:WorkflowViewState.IdRef="CloseWindow_3" InformativeScreenshot="9b177f6ff57804b5f3d7615206ad9741" Selector="&lt;html app='msedge.exe' title='ACME System 1' /&gt;" WaitForReady="INTERACTIVE" />
   </Sequence>
 </Activity>
